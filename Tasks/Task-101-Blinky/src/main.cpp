@@ -36,7 +36,7 @@ int main()
         blueLED = 0; 
 
         // Turn green LED ON  
-        greeLED = 1;
+        greenLED = 1;
 
         // Wait 1 second
         wait_us(1000000); 
