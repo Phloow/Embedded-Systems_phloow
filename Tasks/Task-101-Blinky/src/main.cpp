@@ -1,5 +1,5 @@
-#include <mbed.h>
-//#include "mbed.h"       // this is relevant when programming in the Mbed Studio enviroment.
+//#include <mbed.h>
+#include "mbed.h"       // this is relevant when programming in the Mbed Studio enviroment.
 
 // Create a DigitalOut “object” called greenLED. Pass constant LED1 as a “parameter”
 DigitalOut greenLED(LED1);
