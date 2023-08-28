@@ -1,4 +1,4 @@
-//#include <mbed.h>
+//#include <mbed.h>         // If running from PlatformIO, mbed.h must be included as a global file.
 #include "mbed.h"       // this is relevant when programming in the Mbed Studio enviroment.
 
 // Create a DigitalOut “object” called greenLED. Pass constant LED1 as a “parameter”
