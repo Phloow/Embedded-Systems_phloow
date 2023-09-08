@@ -24,7 +24,7 @@ PortOut LED_PORTE(PortE, LED_MASK); //assign port E of the MCU as a universal ou
 DigitalOut LED_BAR_OE(LED_BAR_OE_PIN,1);      //Off by default
 DigitalOut LED_DIGIT_OE(LED_DIGIT_OE_PIN,1);   //Off by default
 
-DigitalOut LED_D1_LE(LED_D1_LE_PIN,0);
+DigitalOut LED_D1_LE(LED_D1_LE_PIN,0);  //instantiate '
 DigitalOut LED_D2_LE(LED_D2_LE_PIN,0);
 DigitalOut LED_RED_LE(LED_RED_LE_PIN,0);
 DigitalOut LED_GRN_LE(LED_GRN_LE_PIN,0);
