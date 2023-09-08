@@ -94,3 +94,8 @@ int main()
     while (true);   
 }
 /*-----End of Module 5 -----*/
+
+/*----- Module 6 = MACROS -----*/
+// Special macros that are to be called from within the main program loop
+// This can also be a separate header file to reduce the length of the main program - check the "myVars_myFunctionsHheadersTest" repo fro example 
+/*----- End of Module 6 -----*/
