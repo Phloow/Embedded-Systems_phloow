@@ -11,9 +11,12 @@ Notes:          //?For PlatformIO, libuopmsb library folder needed to be copied 
                 //*Sometimes, you may need to compile more than once, if you get an error on compilation the first time> This happens very often!
 *********/
 
+/*----- Module 1 = INCLUDES (Library & files) -----*/
 #include "uop_msb.h"
 using namespace uop_msb;    //university of plymouth universal library for the embedded system course
+/*----- End of Module 1 -----*/
 
+/*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, #DEFINES, VARIABLE INITIALIZATION, PIN DEFINITIONS, LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS, -----*/
 Buzzer buzz;    //create a "buzz" object instance of the 'Buzzer' module
 
 PortOut LED_PORTE(PortE, LED_MASK); //assign port E of the MCU as a universal output port named 'LED_MASK'
@@ -30,8 +33,12 @@ DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN,0);
 DigitalIn BlueButton(USER_BUTTON);
 
 BusOut ledData(LED_D0_PIN, LED_D1_PIN, LED_D2_PIN, LED_D3_PIN, LED_D4_PIN, LED_D5_PIN, LED_D6_PIN, LED_D7_PIN);
+/*----- End of Module 2 -----*/
 
+/*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
+/*----- Module 4 = SETUP()  - Only relevant for Arduino framwework: Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc -----*/
 
+/*----- Module 5 = MAIN() -----*/ // none to declare
 int main()
 {
     printf("\nTASK-110\n");
