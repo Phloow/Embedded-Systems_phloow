@@ -21,14 +21,14 @@ Buzzer buzz;    //create a "buzz" object instance of the 'Buzzer' module
 
 PortOut LED_PORTE(PortE, LED_MASK); //assign port E of the MCU as a universal output port named 'LED_MASK'
 
-DigitalOut LED_BAR_OE(LED_BAR_OE_PIN,1);      //Off by default
-DigitalOut LED_DIGIT_OE(LED_DIGIT_OE_PIN,1);   //Off by default
+DigitalOut LED_BAR_OE(LED_BAR_OE_PIN,1);      //instantiate 'DigitalOut' as an object called LED_BAR_OE (user-defined variable name) for "LED_BAr_OE_PIN" as defined in uop_msb.h file of the uop_msb library.  Off by default
+DigitalOut LED_DIGIT_OE(LED_DIGIT_OE_PIN,1);   //same as above. Off by default
 
-DigitalOut LED_D1_LE(LED_D1_LE_PIN,0);  //instantiate '
-DigitalOut LED_D2_LE(LED_D2_LE_PIN,0);
-DigitalOut LED_RED_LE(LED_RED_LE_PIN,0);
-DigitalOut LED_GRN_LE(LED_GRN_LE_PIN,0);
-DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN,0);
+DigitalOut LED_D1_LE(LED_D1_LE_PIN,0);//same as above
+DigitalOut LED_D2_LE(LED_D2_LE_PIN,0);//same as above
+DigitalOut LED_RED_LE(LED_RED_LE_PIN,0);//same as above
+DigitalOut LED_GRN_LE(LED_GRN_LE_PIN,0);//same as above
+DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN,0);//same as above
 
 DigitalIn BlueButton(USER_BUTTON);
 
