@@ -13,22 +13,22 @@ Notes:          //?For PlatformIO, libuopmsb library folder needed to be copied 
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
 #include "uop_msb.h"
-using namespace uop_msb;    //university of plymouth universal library for the embedded system course
+using namespace uop_msb; // university of plymouth universal library for the embedded system course
 /*----- End of Module 1 -----*/
 
 /*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, #DEFINES, VARIABLE INITIALIZATION, PIN DEFINITIONS, LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS, -----*/
-Buzzer buzz;    //create a "buzz" object instance of the 'Buzzer' module
+Buzzer buzz; // create a "buzz" object instance of the 'Buzzer' module
 
-PortOut LED_PORTE(PortE, LED_MASK); //instantiate "PortOut" as 'LED_PORTE' and assign port E of the MCU as a universal output port named 'LED_MASK' as defined in uop_msb.h file of the uop_msb library
+PortOut LED_PORTE(PortE, LED_MASK); // instantiate "PortOut" as 'LED_PORTE' and assign port E of the MCU as a universal output port named 'LED_MASK' as defined in uop_msb.h file of the uop_msb library
 
-DigitalOut LED_BAR_OE(LED_BAR_OE_PIN,1);      //instantiate 'DigitalOut' as an object called LED_BAR_OE (user-defined variable name) for "LED_BAr_OE_PIN" as defined in uop_msb.h file of the uop_msb library.  Off by default
-DigitalOut LED_DIGIT_OE(LED_DIGIT_OE_PIN,1);   //same as above. Off by default
+DigitalOut LED_BAR_OE(LED_BAR_OE_PIN, 1);     // instantiate 'DigitalOut' as an object called LED_BAR_OE (user-defined variable name) for "LED_BAr_OE_PIN" as defined in uop_msb.h file of the uop_msb library.  Off by default
+DigitalOut LED_DIGIT_OE(LED_DIGIT_OE_PIN, 1); // same as above. Off by default
 
-DigitalOut LED_D1_LE(LED_D1_LE_PIN,0);//same as above
-DigitalOut LED_D2_LE(LED_D2_LE_PIN,0);//same as above
-DigitalOut LED_RED_LE(LED_RED_LE_PIN,0);//same as above
-DigitalOut LED_GRN_LE(LED_GRN_LE_PIN,0);//same as above
-DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN,0);//same as above
+DigitalOut LED_D1_LE(LED_D1_LE_PIN, 0);     // same as above
+DigitalOut LED_D2_LE(LED_D2_LE_PIN, 0);     // same as above
+DigitalOut LED_RED_LE(LED_RED_LE_PIN, 0);   // same as above
+DigitalOut LED_GRN_LE(LED_GRN_LE_PIN, 0);   // same as above
+DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN, 0); // same as above
 
 DigitalIn BlueButton(USER_BUTTON);
 
@@ -63,17 +63,17 @@ int main()
     printf("add 1 and shortCount is %hd\n", shortCount);
 
     // Long long
-    long long NN = 0x12345678ABCD0001LL; //Literal in HEX
+    long long NN = 0x12345678ABCD0001LL; // Literal in HEX
     printf("A very large number %lld\n", NN);
     printf("A very large number in hex %llX\n", NN);
 
     // unsigned
-    unsigned short p = 1; //16 bit
+    unsigned short p = 1; // 16 bit
     printf("unsigned int p = %u\n", p);
     p = p - 2;
     printf("Subtract 2. Now unsigned int p = %u\n", p);
 
-    // float 
+    // float
     float pi_float = 3.1415926536;
     printf("The value of pi is approximately %f\n", pi_float);
 
@@ -91,11 +91,12 @@ int main()
     printf("Size of a double is %d bytes\n", sizeof(double));
 
     // Stop
-    while (true);   
+    while (true)
+        ;
 }
 /*-----End of Module 5 -----*/
 
 /*----- Module 6 = MACROS -----*/
 // Special macros that are to be called from within the main program loop
-// This can also be a separate header file to reduce the length of the main program - check the "myVars_myFunctionsHheadersTest" repo fro example 
+// This can also be a separate header file to reduce the length of the main program - check the "myVars_myFunctionsHheadersTest" repo fro example
 /*----- End of Module 6 -----*/
