@@ -19,7 +19,7 @@ using namespace uop_msb;    //university of plymouth universal library for the e
 /*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, #DEFINES, VARIABLE INITIALIZATION, PIN DEFINITIONS, LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS, -----*/
 Buzzer buzz;    //create a "buzz" object instance of the 'Buzzer' module
 
-PortOut LED_PORTE(PortE, LED_MASK); //assign port E of the MCU as a universal output port named 'LED_MASK'
+PortOut LED_PORTE(PortE, LED_MASK); //instantiate "PortOut" as 'LED_PORTE' and assign port E of the MCU as a universal output port named 'LED_MASK' as defined in uop_msb.h file of the uop_msb library
 
 DigitalOut LED_BAR_OE(LED_BAR_OE_PIN,1);      //instantiate 'DigitalOut' as an object called LED_BAR_OE (user-defined variable name) for "LED_BAr_OE_PIN" as defined in uop_msb.h file of the uop_msb library.  Off by default
 DigitalOut LED_DIGIT_OE(LED_DIGIT_OE_PIN,1);   //same as above. Off by default
