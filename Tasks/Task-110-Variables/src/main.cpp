@@ -92,8 +92,9 @@ int main()
     printf("Size of a double is %d bytes\n", sizeof(double));
 
     // Stop
-    while (true)
-        ;
+    while (true){
+        printf("This is a test of the serial port!");
+    }
 }
 /*-----End of Module 5 -----*/
 
