@@ -1,4 +1,5 @@
 // You need this to use the Module Support Board
+//include "mbed.h"  //not necessary because it has already been included in the uop_msb library
 #include "uop_msb.h"    //university of plymouth universal library for the embedded system course
 using namespace uop_msb;
 

@@ -12,6 +12,7 @@ Notes:          //?For PlatformIO, libuopmsb library folder needed to be copied 
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
+//include "mbed.h"  //not necessary because it has already been included in the uop_msb library
 #include "uop_msb.h"
 using namespace uop_msb; // university of plymouth universal library for the embedded system course
 /*----- End of Module 1 -----*/
