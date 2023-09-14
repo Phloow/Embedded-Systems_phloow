@@ -2,7 +2,7 @@
 Program:        Basic program to demonstrate the use of variables
 Target device:  Nucleo F401RE or Nucleo F429ZI
 Framework:      Mbed OS
-Author:         Nicholas Outram (Task 110 from Embedded Systems Course)
+Author:         Nicholas Outram (Task 103 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
 Code Status:    //!Mbed Studio - Not tested on Mbed Studio (leave 'libuopmsb.lib' and 'mbed-os.lib' in the root folder if you want to compile with Mbed Studio)
@@ -36,7 +36,7 @@ DigitalIn BlueButton(USER_BUTTON);
 
 BusOut ledData(LED_D0_PIN, LED_D1_PIN, LED_D2_PIN, LED_D3_PIN, LED_D4_PIN, LED_D5_PIN, LED_D6_PIN, LED_D7_PIN);
 
-Serial nucleo(USBTX, USBRX); // instantiate the "Serial" module as an object 'nucleo'; USBTX -  tx, USBRX - rx
+//Serial nucleo(USBTX, USBRX); // instantiate the "Serial" module as an object 'nucleo'; USBTX -  tx, USBRX - rx
 /*----- End of Module 2 -----*/
 
 /*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
@@ -45,59 +45,59 @@ Serial nucleo(USBTX, USBRX); // instantiate the "Serial" module as an object 'nu
 /*----- Module 5 = MAIN() -----*/ // none to declare
 int main()
 {
-    nucleo.printf("\nTASK-110\n");
+    printf("\nTASK-110\n");
 
     // Integer
     int count = 0;
-    nucleo.printf("count = %d\n", count);
+    printf("count = %d\n", count);
 
     // Add one to count
     count = count + 1;
-    nucleo.printf("New value of count = %d\n", count);
+    printf("New value of count = %d\n", count);
 
     // Char
     char character;
     character = 'A';
-    nucleo.printf("The character %c has the ASCII code %d\n", character, character);
+    printf("The character %c has the ASCII code %d\n", character, character);
 
     // Short
     short shortCount = 32766;
-    nucleo.printf("The value of shortCount is %hd\n", shortCount);
+    printf("The value of shortCount is %hd\n", shortCount);
     shortCount = shortCount + 1;
-    nucleo.printf("add 1 and shortCount is %hd\n", shortCount);
+    printf("add 1 and shortCount is %hd\n", shortCount);
 
     // Long long
     long long NN = 0x12345678ABCD0001LL; // Literal in HEX
-    nucleo.printf("A very large number %lld\n", NN);
-    nucleo.printf("A very large number in hex %llX\n", NN);
+    printf("A very large number %lld\n", NN);
+    printf("A very large number in hex %llX\n", NN);
 
     // unsigned
     unsigned short p = 1; // 16 bit
-    nucleo.printf("unsigned int p = %u\n", p);
+    printf("unsigned int p = %u\n", p);
     p = p - 2;
-    nucleo.printf("Subtract 2. Now unsigned int p = %u\n", p);
+    printf("Subtract 2. Now unsigned int p = %u\n", p);
 
     // float
     float pi_float = 3.1415926536;
-    nucleo.printf("The value of pi is approximately %f\n", pi_float);
+    printf("The value of pi is approximately %f\n", pi_float);
 
     // double
     double pi_double = 3.1415926536l;
-    nucleo.printf("The value of pi is approximately %lf\n", pi_double);
+    printf("The value of pi is approximately %lf\n", pi_double);
 
     // Data type sizes (in bytes)
-    nucleo.printf("Size of a char is %d bytes\n", sizeof(char));
-    nucleo.printf("Size of a short is %d bytes\n", sizeof(short));
-    nucleo.printf("Size of a int is %d bytes\n", sizeof(int));
-    nucleo.printf("Size of a long is %d bytes\n", sizeof(long));
-    nucleo.printf("Size of a long long is %d bytes\n", sizeof(long long));
-    nucleo.printf("Size of a float is %d bytes\n", sizeof(float));
-    nucleo.printf("Size of a double is %d bytes\n", sizeof(double));
+    printf("Size of a char is %d bytes\n", sizeof(char));
+    printf("Size of a short is %d bytes\n", sizeof(short));
+    printf("Size of a int is %d bytes\n", sizeof(int));
+    printf("Size of a long is %d bytes\n", sizeof(long));
+    printf("Size of a long long is %d bytes\n", sizeof(long long));
+    printf("Size of a float is %d bytes\n", sizeof(float));
+    printf("Size of a double is %d bytes\n", sizeof(double));
 
     // Stop
     while (true)
     {
-        nucleo.printf("This is a test of the serial port!");
+        printf("This is a test of the serial port!");
     }
 }
 /*-----End of Module 5 -----*/

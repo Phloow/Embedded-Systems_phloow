@@ -35,6 +35,5 @@ int main()
         //Pause
         buzz.rest();
         wait_us(WAIT_TIME_MS * 1000);
-
     }
 }
