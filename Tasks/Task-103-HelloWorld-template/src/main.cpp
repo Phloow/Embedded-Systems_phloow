@@ -12,12 +12,12 @@ Notes:          For PlatformIO, libuopmsb library folder needed to be copied int
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
-//include "mbed.h"  //not necessary because it has already been included in the uop_msb library
+// include "mbed.h"  //not necessary because it has already been included in the uop_msb library
 #include "uop_msb.h" //university of plymouth universal library for the embedded system course
 using namespace uop_msb;
 /*----- End of Module 1 -----*/
 
-/*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, #DEFINES, VARIABLE INITIALIZATION, PIN DEFINITIONS, LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS, -----*/
+/*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, PIN DEFINITIONS, & #DEFINES: //! VARIABLE INITIALIZATION,  LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS (for Mbed, these go under int main() before the while(1) loop -----*/
 #define WAIT_TIME_MS 2000
 
 // Initialise the DigitalOut objects with a default value of 1
@@ -28,7 +28,7 @@ LCD_16X2_DISPLAY lcd;         // Instantiate the LCD_16X2_DISPLAY class of the l
 /*----- End of Module 2 -----*/
 
 /*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
-/*----- Module 4 = SETUP()  - Only relevant for Arduino framwework: Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc -----*/
+/*----- Module 4 = SETUP()  - Only relevant for Arduino framwework: //! Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc (for Mbed, these go under int main() before the while(1) loop) -----*/
 
 /*----- Module 5 = MAIN() -----*/ // none to declare
 int main()
@@ -58,5 +58,5 @@ int main()
 
 /*----- Module 6 = MACROS -----*/
 // Special macros that are to be called from within the main program loop
-// This can also be a separate header file to reduce the length of the main program - check the "myVars_myFunctionsHheadersTest" repo fro example 
+// This can also be a separate header file to reduce the length of the main program - check the "myVars_myFunctionsHheadersTest" repo fro example
 /*----- End of Module 6 -----*/
