@@ -1,3 +1,4 @@
+//! this is not a good code because before the while(true) line activates, 
 #include "mbed.h"
 
 // main() runs in its own thread in the OS
