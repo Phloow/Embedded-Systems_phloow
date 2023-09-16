@@ -28,7 +28,7 @@ LCD_16X2_DISPLAY lcd;         // Instantiate the LCD_16X2_DISPLAY class of the l
 /*----- End of Module 2 -----*/
 
 /*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
-/*----- Module 4 = SETUP()  - Only relevant for Arduino framwework: //! Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc (for Mbed, these go under int main() before the while(1) loop) -----*/
+/*----- Module 4 = SETUP()  - Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc //!Only here for Arduino framwework. For Mbed, this goes under "int main()" module before the while(1) loop) -----*/
 
 /*----- Module 5 = MAIN() -----*/ // none to declare
 int main()
