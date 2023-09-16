@@ -1,4 +1,4 @@
-//! this is not a good code because before the while(true) line activates, 
+//! this is not a good code because all the printf() lines would have been excecuted before the serial monitor opens and there is nothing to see in the while(true) line activates, 
 #include "mbed.h"
 
 // main() runs in its own thread in the OS
