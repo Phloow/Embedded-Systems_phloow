@@ -6,9 +6,9 @@ Author:         Nicholas Outram (Task 103 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
 Code Status:    Mbed Studio - Compiled and working perfectly on F429ZI + MSB based on original code
-Code Status:    PlatformIO - Compiled and working perfectly on F429ZI + MSB
-Notes:          For PlatformIO, libuopmsb library folder needed to be copied into the "lib" folder as a local library. There was no need to include "mbed.h" as defining framwork in platformio.ini takes care of this
-                Sometimes, you may need to compile more than once, if you get an error on compilation the first time
+Code Status:    //?PlatformIO - Compiled and working perfectly on F429ZI + MSB
+Notes:          //Todo: For PlatformIO, "libuopmsb" library folder needed to be copied into the "lib" folder as a local library. 
+                //!Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
