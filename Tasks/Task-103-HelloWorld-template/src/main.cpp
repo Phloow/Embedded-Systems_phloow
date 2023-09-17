@@ -7,7 +7,7 @@ Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
 Code Status:    Mbed Studio - Compiled and working perfectly on F429ZI + MSB based on original code
 Code Status:    //?PlatformIO - Compiled and working perfectly on F429ZI + MSB
-Notes:          //Todo: For PlatformIO, "libuopmsb" library folder needed to be copied into the "lib" folder as a local library. 
+Notes:          //Todo: For PlatformIO, "libuopmsb" library folder needed to be copied into the "lib" folder as a local library.
                 //!Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
 *********/
 
