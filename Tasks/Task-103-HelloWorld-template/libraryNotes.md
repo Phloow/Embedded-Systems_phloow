@@ -20,6 +20,9 @@ When this file is placed in the 'libuopmsb' folder downloaded, simply to conform
 
 Similarly, I re-organised the library to mirror PlatformIO's recomended structure as below:
 |--uopmsb
-|--
+|----src
+|------uopmsb.cpp
+|----include
+
 
 _
