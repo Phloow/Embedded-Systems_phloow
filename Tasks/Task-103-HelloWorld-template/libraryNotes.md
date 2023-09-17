@@ -19,5 +19,6 @@ I created a library.json file that contains the following information:
 When this file is placed in the 'libuopmsb' folder downloaded, simply to conform with PlatformIO's recommended library structure, the same library comes up with the below error:
 
 Similarly, I re-organised the library to mirror PlatformIO's recomended structure as below:
+|--uopmsb
 
 _
