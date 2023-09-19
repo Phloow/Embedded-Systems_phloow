@@ -24,9 +24,10 @@ BusIn buttons(BTN1_PIN, BTN2_PIN, BTN3_PIN, BTN4_PIN);
 // DigitalIn buttonC(BTN3_PIN);
 // DigitalIn buttonD(BTN4_PIN);
 
-DigitalOut redLED(TRAF_RED1_PIN);    // Red Traffic 1
-DigitalOut yellowLED(TRAF_YEL1_PIN); // Yellow Traffic 1
-DigitalOut greenLED(TRAF_GRN1_PIN);  // Green Traffic 1
+DigitalOut redLED(TRAF_RED1_PIN);    //'TRAF_RED1_PIN' decalred in the uop_msb library and is the alias for PC_2.
+DigitalOut yellowLED(TRAF_YEL1_PIN); //'TRAF_YEL1_PIN' decalred in the uop_msb library and is the alias for PC_3.
+DigitalOut greenLED(TRAF_GRN1_PIN);  //'TRAF_GRN1_PIN' decalred in the uop_msb library and is the alias for PC_6.
+
 
 // Dual Digit 7-segment Display
 LatchedLED disp(LatchedLED::SEVEN_SEG);
@@ -47,7 +48,7 @@ int main()
     DigitalIn &buttonD = buttons[3];
 
     // Configure switches
-    buttonC.mode(PullDown);
+    buttonC.mode(PullDown);         // set up buttonC to 
     buttonD.mode(PullDown);
 
     // Turn ON the 7-segment display
