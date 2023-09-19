@@ -7,7 +7,7 @@ Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
 Code Status:    Mbed Studio - Compiled and working perfectly on F429ZI + MSB based on original code
 Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB. Restructured library (uopmsb) is placed on GitHub and cloned to have a local copy.
-Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library. 
+Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library.
                 //todo:Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
 *********/
 
@@ -30,7 +30,7 @@ LCD_16X2_DISPLAY lcd;         // Instantiate the LCD_16X2_DISPLAY class of the l
 /*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
 /*----- Module 4 = SETUP()  - Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc //!Only here for Arduino framwework. For Mbed, this goes under "int main()" module before the while(1) loop) -----*/
 
-/*----- Module 5 = MAIN() -----*/ // none to declare
+/*----- Module 5 = MAIN() -----*/
 int main()
 {
     printf("Hello World\n");      // Write to serial terminal on host PC. Equivalent of "Serial.print()"" in Arduino
@@ -46,7 +46,9 @@ int main()
     lcd.printf("ELEC143");
 
     volatile int counter = 0; // define a variable, "counter"
-    while (true)
+
+    // Infinite loop
+    while (true)                        // infintie loop starts here
     {                                   // infintie loop starts here
         ledRed = !ledRed;               // Toggle the blue LED
         counter++;                      // increment "counter"
