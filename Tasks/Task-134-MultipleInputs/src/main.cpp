@@ -30,7 +30,12 @@ DigitalOut greenLED(TRAF_GRN1_PIN);  // Green Traffic 1
 
 // Dual Digit 7-segment Display
 LatchedLED disp(LatchedLED::SEVEN_SEG);
+/*----- End of Module 2 -----*/
 
+/*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
+/*----- Module 4 = SETUP()  - Start Libraries/modules, set pin modes, start serial, start libraries, start displays, etc //!Only here for Arduino framwework. For Mbed, this goes under "int main()" module before the while(1) loop) -----*/
+
+/*----- Module 5 = MAIN() -----*/
 int main()
 {
     volatile int count = 0;
@@ -89,3 +94,9 @@ int main()
         wait_us(250000);
     }
 }
+/*-----End of Module 5 -----*/
+
+/*----- Module 6 = MACROS -----*/
+// Special macros that are to be called from within the main program loop
+// This can also be a separate header file to reduce the length of the main program - check the "myVars_myFunctionsHheadersTest" repo fro example
+/*----- End of Module 6 -----*/
