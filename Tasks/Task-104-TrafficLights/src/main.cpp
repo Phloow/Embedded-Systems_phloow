@@ -5,10 +5,10 @@ Framework:      Mbed OS
 Author:         Nicholas Outram (Task 104 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
-Code Status:    //!Mbed Studio - Not tested on Mbed Studio (leave 'libuopmsb.lib' and 'mbed-os.lib' in the root folder if you want to compile with Mbed Studio)
-Code Status:    //TODO: PlatformIO - Compiled and working perfectly on F429ZI + MSB
-Notes:          //?For PlatformIO, libuopmsb library folder needed to be copied into the "lib" folder as a local library. There was no need to include "mbed.h" as defining framwork in platformio.ini takes care of this
-                //*Sometimes, you may need to compile more than once, if you get an error on compilation the first time> This happens very often!
+Code Status:    //!Mbed Studio - Not tested on Mbed Studio; leave 'libuopmsb.lib' and 'mbed-os.lib' in the root to compile with Mbed Studio
+Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB
+Notes:          //?For PlatformIO, restructured library (uopmsb) is placed on GitHub and cloned to have a local copy. This clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library. 
+                //todo:Sometimes, you may need to compile more than once, if you get an error on compilation the first time> This happens very often!
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/

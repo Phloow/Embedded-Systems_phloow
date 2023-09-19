@@ -6,8 +6,8 @@ Author:         Nicholas Outram (Task 103 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
 Code Status:    Mbed Studio - Compiled and working perfectly on F429ZI + MSB based on original code
-Code Status:    //?PlatformIO - Compiled and working perfectly on F429ZI + MSB
-Notes:          //Todo: For PlatformIO, "libuopmsb" library folder needed to be copied into the "lib" folder as a local library.
+Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB
+Notes:          //?For PlatformIO, restructured library (uopmsb) is placed on GitHub and cloned to have a local copy. This clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library. 
                 //!Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
 *********/
 
