@@ -34,17 +34,17 @@ LCD_16X2_DISPLAY lcd; // instatiate the LCD library(part of the 'uop_msb' librar
 int main()
 {
     lcd.puts("Red");  // show "RED" on LCD because red LED was initialised as ON at the beginning of the code
-    wait_us(1000000); // slight delay for 1s
+    wait_us(3000000); // slight delay for 1s
 
     amber = 1;         // turn on the YEL led
     lcd.cls();         // erase the LCD
     lcd.puts("Amber"); // display "Amber" to match the LED
-    wait_us(1000000);  // slight delay
+    wait_us(3000000);  // slight delay
 
     green = 1;         // turn on green LED
     lcd.cls();         // clear screen
     lcd.puts("Green"); // display "Green" to match LED
-    wait_us(1000000);
+    wait_us(3000000);
 
     lcd.cls();
     lcd.puts("TASK-104");
