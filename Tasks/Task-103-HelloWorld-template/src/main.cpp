@@ -15,7 +15,7 @@ Notes:          //Todo: For PlatformIO, "libuopmsb" library folder needed to be 
 // include "mbed.h"  //not necessary because it has already been included in the uop_msb library
 #include "uop_msb.h" //university of plymouth universal library for the embedded system course
 using namespace uop_msb;
-#include "SPL06-001.h"
+//#include "SPL06-001.h"
 /*----- End of Module 1 -----*/
 
 /*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, PIN DEFINITIONS, & #DEFINES: //! VARIABLE INITIALIZATION,  LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS (for Mbed, these go under int main() before the while(1) loop -----*/
