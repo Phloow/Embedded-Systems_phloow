@@ -48,8 +48,8 @@ int main()
     DigitalIn &buttonD = buttons[3];
 
     // Configure switches
-    buttonC.mode(PullDown);         // set up buttonC to 
-    buttonD.mode(PullDown);
+    buttonC.mode(PullDown);         // set up buttonC pin with pull-down 
+    buttonD.mode(PullDown);         // set up buttonD pin with pull-down
 
     // Turn ON the 7-segment display
     disp.enable(true);
