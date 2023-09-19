@@ -1,6 +1,6 @@
 /*********
 Program:        Basic program to test the module support board and its peripherals.
-Target device:  Nucleo F401RE or Nucleo F429ZI
+Target device:  STM32 (Nucleo F401RE or Nucleo F429ZI)
 Framework:      Mbed OS
 Author:         Nicholas Outram (Task 103 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
