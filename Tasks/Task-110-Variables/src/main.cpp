@@ -1,15 +1,16 @@
 /*********
-Program:        Basic program to demonstrate the use of variables
-Target device:  Nucleo F401RE or Nucleo F429ZI
+Program:        Basic program to demonstrate print formating and variables
+Target device:  STM32 (Nucleo F401RE or Nucleo F429ZI)
 Framework:      Mbed OS
-Author:         Nicholas Outram (Task 103 from Embedded Systems Course)
+Author:         Nicholas Outram (Task 110 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
-Code Status:    //!Mbed Studio - Not tested on Mbed Studio (leave 'libuopmsb.lib' and 'mbed-os.lib' in the root folder if you want to compile with Mbed Studio)
-Code Status:    //TODO: PlatformIO - Compiled and working perfectly on F429ZI + MSB
-Notes:          //?For PlatformIO, libuopmsb library folder needed to be copied into the "lib" folder as a local library. There was no need to include "mbed.h" as defining framwork in platformio.ini takes care of this
-                //!COMPILE AT LEAST TWICE!!! - Sometimes, you get an error on compilation the first time. This happens quite often!
-                //!To use the serial port in PlatformIO, you have to instantialte the 'Serial' class to use serial functions such as 'printf()'. This appears to have been done under-the-hood in Mbed Studio such that you can use the functions directly.
+Code Status:    //!Not Mbed Studio - Compiled and working perfectly on F429ZI + MSB based on original code
+Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB. Restructured library (uopmsb) is placed on GitHub and cloned to have a local copy.
+Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library.
+                //todo:Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
+                //!Use the "platformio.ini" and "mbed_app.json" files od this project to any new project you are compiling to use their default settings as my preferred settings.
+                //?If you simply want to upload your precompiled firmware to the Nucleo board, open ".pio\build\nucleo_f429zi" and drag "firmware.bin" onto the F429ZI drive D in your windows explorer window.
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
@@ -35,8 +36,6 @@ DigitalOut LED_BLUE_LE(LED_BLUE_LE_PIN, 0); // same as above
 DigitalIn BlueButton(USER_BUTTON);
 
 BusOut ledData(LED_D0_PIN, LED_D1_PIN, LED_D2_PIN, LED_D3_PIN, LED_D4_PIN, LED_D5_PIN, LED_D6_PIN, LED_D7_PIN);
-
-//Serial nucleo(USBTX, USBRX); // instantiate the "Serial" module as an object 'nucleo'; USBTX -  tx, USBRX - rx
 /*----- End of Module 2 -----*/
 
 /*----- Module 3 = FUNCTION PRE-DECLARATIONS - Only relevant for Arduino framwework -----*/ // none to declare
