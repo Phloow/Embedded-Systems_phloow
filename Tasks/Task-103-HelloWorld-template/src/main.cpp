@@ -9,6 +9,7 @@ Code Status:    Mbed Studio - Compiled and working perfectly on F429ZI + MSB bas
 Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB. Restructured library (uopmsb) is placed on GitHub and cloned to have a local copy.
 Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library.
                 //todo:Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
+                //!Use the "platformio.ini" and "mbed_app.json" files od this project to any new project you are compiling to use their default settings as my preferred settings.
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
