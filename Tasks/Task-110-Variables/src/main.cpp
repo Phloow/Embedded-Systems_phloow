@@ -96,8 +96,8 @@ int main()
     // Stop
     while (true)
     {
-        printf("This is a test of the serial port!");
-    }
+        // do nothing
+        }
 }
 /*-----End of Module 5 -----*/
 
