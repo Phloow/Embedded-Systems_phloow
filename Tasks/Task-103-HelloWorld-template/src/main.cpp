@@ -10,7 +10,7 @@ Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB. 
 Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library.
                 //todo:Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
                 //!Use the "platformio.ini" and "mbed_app.json" files od this project to any new project you are compiling to use their default settings as my preferred settings.
-                //?For a precompiled project, if you simply want to upload your Nucleo board, open ".pio\build\nucleo_f429zi" and drag "firmware.bin" onto the F429ZI drive D in your windows explorer window.
+                //?If you simply want to upload your precompiled firmware to the Nucleo board, open ".pio\build\nucleo_f429zi" and drag "firmware.bin" onto the F429ZI drive D in your windows explorer window.
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
