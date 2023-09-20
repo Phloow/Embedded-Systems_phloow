@@ -5,7 +5,7 @@ Framework:      Mbed OS
 Author:         Nicholas Outram (Task 110 from Embedded Systems Course)
 Modified by:    Folarin Shomefun (slightly and using my template)
 Credits:        Nicholas Outram
-Code Status:    //!Not Mbed Studio - Compiled and working perfectly on F429ZI + MSB based on original code
+Code Status:    //!Mbed Studio - Not attempted in Mbed Studio
 Code Status:    //*PlatformIO - Compiled and working perfectly on F429ZI + MSB. Restructured library (uopmsb) is placed on GitHub and cloned to have a local copy.
 Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency in platformio.ini (see mindmap for details) for any project that needs the library.
                 //todo:Sometimes, you may need to compile more than once, if you get an error on compilation the first time. This happens very often!
