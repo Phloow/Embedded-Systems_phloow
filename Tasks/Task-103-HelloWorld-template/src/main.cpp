@@ -18,7 +18,7 @@ using namespace uop_msb;
 /*----- End of Module 1 -----*/
 
 /*----- Module 2 = VARIABLES NAME & TYPE DECLARATION, PIN DEFINITIONS, & #DEFINES: //! VARIABLE INITIALIZATION,  LIBRARY INSTATIATION, LIBRARY PORT / SITE ADDRESS ASSIGNMENT, FLAGS (for Mbed, these go under int main() before the while(1) loop -----*/
-#define WAIT_TIME_MS 2000
+#define WAIT_TIME_MS 500
 
 // Initialise the DigitalOut objects with a default value of 1
 DigitalOut ledGreen(PB_0, 1); // Instantiate the DigitalOut method as a variable called "ledGreen" and pass the port we want to control as its parameter and initialise it to "1" - HIGH. LED 1 is on PB_0 of F429ZI. Unlike Arduino where you have to define a port pin first before setting the mode(OUT or IN), you do this in one go in mbed!
