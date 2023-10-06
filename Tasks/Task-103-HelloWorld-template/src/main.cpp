@@ -14,7 +14,7 @@ Notes:          //?For PlatformIO, the repo clone is symlinked as a dependency i
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
-// include "mbed.h"  //not necessary because it has already been included in the uop_msb library
+// include "mbed.h"  //not necessary because it has already been included in the uop_msb library. Otherwise, MUST be included.
 #include "uop_msb.h" //university of plymouth universal library for the embedded system course
 using namespace uop_msb;
 /*----- End of Module 1 -----*/

@@ -5,7 +5,7 @@ Framework: Mbed OS
 Author: Nicholas Outram (Task 1 from Embedded Systems Course)
 Modified by: Folarin Shomefun (using my template)
 Credits: Nicholas Outram
-Code Status: Working perferctly as tested with nucleo boards F401RE and F429ZI from Nick.
+Code Status: Working perfectly as tested with nucleo boards F401RE and F429ZI from Nick.
 *********/
 
 /*----- Module 1 = INCLUDES (Library & files) -----*/
