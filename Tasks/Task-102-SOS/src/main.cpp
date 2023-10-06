@@ -3,10 +3,10 @@
 #include "uop_msb.h"    //university of plymouth universal library for the embedded system course
 using namespace uop_msb;
 
-#define WAIT_TIME_MS 500 
-DigitalOut greenLED(TRAF_GRN1_PIN);
-Buzzer buzz;
-Buttons buttons;
+#define WAIT_TIME_MS 500    // set a base line delay time as 500 (constant) and name it "WAit_TIME_MS"
+DigitalOut greenLED(TRAF_GRN1_PIN); //instantiate an LED for the 'DigitalOut' object
+Buzzer buzz;        // instantiate 'Buzzer' as 'buzz'
+Buttons buttons;    // instantuate 'Buttons' as 'buttons'
 
 // TIP: (I suggest you read this!)
 //
