@@ -46,7 +46,7 @@ int main()
 {
     printf("\nTASK-110\n");
 
-    // Integer
+    // Integer - "int" is a 4-byte-sized (32-bit) value
     int count = 0;
     printf("count = %d\n", count);
 
@@ -56,11 +56,11 @@ int main()
 
     // Char
     char character;
-    character = 'A';
-    printf("The character %c has the ASCII code %d\n", character, character);
+    character = 'A';    //the single quote tells the compiler this is a character as so should be converted to ASCII code 
+    printf("The character %c has the ASCII code %d\n", character, character); //%c is placeholder for a character and %d is the placeholder for a decimal
 
-    // Short
-    short shortCount = 32766;
+    // Short - "short" is a 2-byte-sized (16-bit) value
+    short shortCount = 32766;   
     printf("The value of shortCount is %hd\n", shortCount);
     shortCount = shortCount + 1;
     printf("add 1 and shortCount is %hd\n", shortCount);
